@@ -6,7 +6,7 @@ import pyotp
 # Credentials
 client_id = "XYZ001"
 password = "[PASSWORD]" # Replace with your actual password
-pin = "123456"            # Replace with your actual 2FA PI
+pin = "123456"            # Replace with your actual 2FA PIN
 secrare="[ENCRYPTION_KEY]"  # Replace with your actual secret key
 totp=pyotp.TOTP(secrare).now()
 
@@ -79,7 +79,7 @@ print(data)
 
 
 
-# createBasket = pocket.createBasket({"login_id":clientId,"name":"pocketful002","type":"NORMAL","product_type":"ALL","order_type":"ALL"})
+# createBasket = pocket.createBasket({"login_id":clientId,"name":"pocketful002","type":"NORMAL","product_type":"ALL","order_type":"LIMIT"})
 # print(createBasket)
 
 # response = pocket.addInstrumentToBasket({
@@ -92,7 +92,7 @@ print(data)
 #             "execution_type": "REGULAR",
 #             "instrument_token": 14366,
 #             "order_side": "BUY",
-#             "order_type": "MARKET",
+#             "order_type": "LIMIT",
 #             "price": 0,
 #             "product": "MIS",
 #             "quantity": 1,
@@ -126,7 +126,7 @@ print(data)
 #     "exchange": "NSE",
 #     "instrument_token": "13342",
 #     "client_id": clientId,
-#     "order_type": "MARKET",
+#     "order_type": "LIMIT",
 #     "amo": True,
 #     "price": 0,"quantity": 1,
 #     "disclosed_quantity": 0,
@@ -150,7 +150,7 @@ print(data)
 #     "exchange": "NSE",
 #     "instrument_token": "10666",
 #     "client_id": "clintId",
-#     "order_type": "MARKET",
+#     "order_type": "LIMIT",
 #     "amo": False,
 #     "price": 34.8,
 #     "quantity": 1,
