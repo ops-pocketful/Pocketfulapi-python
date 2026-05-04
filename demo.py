@@ -6,7 +6,7 @@ import pyotp
 # Credentials
 client_id = "XYZ001"
 password = "[PASSWORD]" # Replace with your actual password
-pin = "123456"            # Replace with your actual 2FA PIN
+pin = "123456"            # Replace with your actual 2FA PI
 secrare="[ENCRYPTION_KEY]"  # Replace with your actual secret key
 totp=pyotp.TOTP(secrare).now()
 
